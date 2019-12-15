@@ -98,8 +98,35 @@ Cuando el observable se completa entonces ahi es cuando vamos a tener el total a
 
 > reduce(( acc, curr ) => acc + curr, 0)
 
-> -------------------------------------9--->
+> -----------------------------------9--->
 
-**scan**
+**scan:** el scan es casi lo mismo al **reduce** pero con una diferencia, cuando los valores son emitidos por el observable inmediatamente van saliendo con forme van ingresando pero REGRESA su valor acumulado
+
+eg: 
+
+> input$ ----- 1 ---- 3 ---- 5 -----|--->
+
+> scan( ( acc, cur ) => acc + cur, 0)
+
+> -------------1------4------9------|--->
 
 **Encadenamiento de operadores**
+
+# Sección 6: Operadores no tan comunes
+
+take
+
+first
+
+takeWhile
+
+takeUntil
+
+skip
+
+distinct
+
+distinctUntilChanged
+
+distinctUntilKeyChanged
+
