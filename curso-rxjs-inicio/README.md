@@ -114,13 +114,17 @@ eg:
 
 # Sección 6: Operadores no tan comunes
 
-take
+**take:** toma el numero de iteracciones de un observable que se le indique
 
-first
+**first:** cuando el observable emite el primer valor con first() solo toma el primer valor y finaliza 
+otra condicion que se le puede poner es que ```` first(x => x>+10) ````
 
-takeWhile
+**takeWhile:** Permite recibir valores mientras la condicion se cumpla
+    takeWhile( ({ y }) => y<=150) // cuando la condicion sea mayor a 150 no imprime, pero en el caso que se desee imprimir el valor que rompe la condición se utiliza INCLISIVE
 
-takeUntil
+**takeUntil:** es un observador que recibe como parametro otro observable.
+
+Sigue recibiendo y emitiendo los valores del primer observable hasta que el segundo observable emita su primer valor
 
 skip
 
