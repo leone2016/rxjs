@@ -126,11 +126,50 @@ otra condicion que se le puede poner es que ```` first(x => x>+10) ````
 
 Sigue recibiendo y emitiendo los valores del primer observable hasta que el segundo observable emita su primer valor
 
-skip
+**skip:** sirve para emitir x cantidad de emisiones iniciales
 
-distinct
+**distinct:** deja pasar valores que no hayan sido emitidos previamente en mi observable
 
-distinctUntilChanged
+> interval$ --- 1 --- 1 --- 2 --- 3 --- 3 --- 1 --- 4 --- | ---
 
-distinctUntilKeyChanged
+> distinct()
 
+> -------- --- 1 --- _ --- 2 --- 3 --- _ --- _ --- 4 --- | ---
+
+**distinctUntilChanged:** es muy parecido al operador **distinct**, la diferencia es que emite valores siempre y cuando la emision anterior no sea la misma
+
+
+> interval$ --- 1 --- 1 --- 2 --- 3 --- 3 --- 1 --- 4 --- | ---
+
+> distinctUntilChanged()
+
+> -------- --- 1 --- _ --- 2 --- 3 --- _ --- 1 --- 4 --- | ---
+
+**distinctUntilKeyChanged:** 
+
+
+# Sección 7: Operadores que trabajan con el tiempo
+
+**debounceTime:** nos ayuda a que nosotros podamos contar cuantas milisimas de segundo han pasado desde la ultima emisión y si esa milesima de segundo sobrepasa el parametro que tenemos en los parentesis entonces emitirá dicho valor.
+
+el *debounceTime* nos ayuda a restringir la cantidad de emisiones que nuestro observable inicial esta emitiendo.
+
+En este ejemplo cuando el observabe inicial ingresa **a**, espera 1 segundo y emite **a**, pero entre **b** y **c** se ejecuta antes del minuto, por ese motivo solo se emite **c** 
+
+> source$ --- a --- b - c
+
+> debounceTime(1000)
+
+> -------- ------ +1s -- a --- +1s --c
+
+
+
+**throttleTime:** es lo opuesto al operador debounceTime, pero un poco diferente
+el **debounceTime** cuando el source$ emite un valor espera un segundo para emitir, throttleTime cuando el source$ emite el primer valor inmediatamente emite dicho valor solo que espera 1 seg hasta emitir otro valor
+
+El **throttleTime:** y **debounceTime**  son operadores bastante utilies para controlar las emisiones de observables que emiten valores muy frecuentemente 
+**sampleTime:**
+
+**sample:**
+
+**auditTime:**
