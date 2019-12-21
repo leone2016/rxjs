@@ -165,11 +165,19 @@ En este ejemplo cuando el observabe inicial ingresa **a**, espera 1 segundo y em
 
 
 **throttleTime:** es lo opuesto al operador debounceTime, pero un poco diferente
-el **debounceTime** cuando el source$ emite un valor espera un segundo para emitir, throttleTime cuando el source$ emite el primer valor inmediatamente emite dicho valor solo que espera 1 seg hasta emitir otro valor
+el **debounceTime** cuando el source$ emite un valor espera un segundo para emitir, throttleTime cuando el source$ emite el primer valor inmediatamente emite dicho valor solo que espera 1 seg hasta emitir otro valor, en el caso que se haya emitido mas de un valor en el segundo de emisión, ignorará cualquire valor tomando en cuenta solo el primer valor
 
 El **throttleTime:** y **debounceTime**  son operadores bastante utilies para controlar las emisiones de observables que emiten valores muy frecuentemente 
-**sampleTime:**
+**sampleTime:** nos permite obtener el ultimo valor emitido en un intervalo de tiempo
+el sampleTime nos permite a nosotros tener una subscripcion que esta pendiente de cada una de sus emisiones en periodo de tiempo
 
-**sample:**
+>-a b c ---- b ------------------ctx
 
-**auditTime:**
+> sampleTime(1000)
+
+>---*1s*--c--*1s*--b--*1s*--_-----*1s*--x--
+**sample:**   emite el ultimo valor emitido por el observable, hasta que el otro observable que esta dentro de *samle* emita un valor
+
+**auditTime:** son muchos los operadores que manejan el tiempo  y trabajan de maneras muy similares, el aditTime emite el ultimo valor que ha sido emitido por el observable en un periodo de tiempo determiado\
+
+LOS OBERVADORES DE TIEMPO AYUDAN A CONTROLAR LA EMISION DE SPAM,  QUE NOSOTROS QUEREMOS PROCESAR EN UN PERIODO DE TIEMPO
