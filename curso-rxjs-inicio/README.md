@@ -180,4 +180,41 @@ el sampleTime nos permite a nosotros tener una subscripcion que esta pendiente d
 
 **auditTime:** son muchos los operadores que manejan el tiempo  y trabajan de maneras muy similares, el aditTime emite el ultimo valor que ha sido emitido por el observable en un periodo de tiempo determiado\
 
-LOS OBERVADORES DE TIEMPO AYUDAN A CONTROLAR LA EMISION DE SPAM,  QUE NOSOTROS QUEREMOS PROCESAR EN UN PERIODO DE TIEMPO
+LOS OBERVADORES DE TIEMPO AYUDAN A CONTROLAR LA EMISION DE SPAM,  QUE NOSOTROS QUEREMOS PROCESAR EN UN PERIODO DE TIEMPO 
+
+Vinos en la sección anterior (ajax), que existe la necesidad de subscribirse al producto de un observable, para poder obtener la información que necesitamos, lo cual lleva a que perdamos control de la legibilidad de nuestro código y la facilidad de trabajar con observables y operadores...
+
+Por suerte, el equipo de ReactiveX pensó en esto y nos ayuda con las siguientes funciones y operadores:
+
+**mergeAll** sirve para trbajar con observables que internamente retornan observables.
+si el primer observable se completa(abcd) y tambien se completa la rama padre source$, no se completa el observable en general, es decir no se dispararia el complete despues del mergeAll porque aún hay una subscrpción que esta emitiendo valores, si despues la última subscripcion emite un valor de **g**, la salida seria **g**.
+
+Este proceso de unificar observables en una sola salida se conoce como flattening Operator (Operador de aplanamiento)
+
+source$----------------------------|-------
+\___________\
+_\____________\
+__a_____________\
+___b______________e
+____\______________f
+_____\_______________\
+______c________________\
+_______d_________________g
+________fin
+
+>  **MergeAll**
+
+>-a--b---c---e--d--f------g
+
+
+
+
+**mergeMap** 
+
+**switchMap** 
+
+**concatMap** 
+
+**exhaustMap** 
+
+Aquí tendremos formas muy interesantes de poder trabajar con el concepto del aplanamiento, que veremos y explicaré más adelante en esta sección
