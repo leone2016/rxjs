@@ -8,7 +8,7 @@ npm install
 Ese comando descargará todos los módulos de node necesarios para ejecutar el proyecto.
 
 
-** Cuando termine de instalar los node_modules, entonces podermos ejecutar el proyecto con el siguiente comando
+** Cuando termine de instalar los node_modules, entonces podemos ejecutar el proyecto con el siguiente comando
 
 ```
 npm start
@@ -27,8 +27,8 @@ Simplemente cambian el puerto por el que ustedes necesiten y listo. (lógicament
 
 Los temas principales de la sección son:
 
-**of:** cuando tengamos una secuencia de valores que siempre van a ser boleanos o siempre van a ser strings,
- es recomendable agregar el tipo de dato of<string> o of<number>, con el objetivo de tener un tipado estrigto de datos
+**of:** cuando tengamos una secuencia de valores que siempre van a ser boléanos o siempre van a ser strings,
+ es recomendable agregar el tipo de dato of<string> o of<number>, con el objetivo de tener un tipado estricto de datos
  const obs$ = of ([1,2], { a:1, b:2 }, function(){}, Promise.resolve(true))
 
  **from:** crea un observable en base a un array, objeto, promesa, iterable, otro observable
@@ -36,8 +36,8 @@ Los temas principales de la sección son:
 **fromEvent:** nos permite crear observables de even target es decir de cierto tipo
 en este ejemplo el event target es el DOCUMENT donde se busca todos los eventos del SCROLL
 
-**range:** la cual nos crea un obs que crea una sequencia de num en base a un rango, por defecto con sincronos pero se puede transformar en asyncronos con la funcion **async scheduler**, si tenemos un range de 1 - 5 el valor inicial será 1 y el último será va ser el 5 y se completaría
-interval, el segundo parametro del range indica el N número consecticos 
+**range:** la cual nos crea un obs que crea una secuencia de num en base a un rango, por defecto con sincronos pero se puede transformar en asyncronos con la función **async scheduler**, si tenemos un range de 1 - 5 el valor inicial será 1 y el último será va ser el 5 y se completaría
+interval, el segundo parámetro del range indica el N número consecutivos 
 eg: 
 ````js
 range( 1,5 )
@@ -58,10 +58,10 @@ range( 1,5 )
 
  
 
-**interval y timer:** estas dos funciones trabajan con intevalos de tiempo
+**interval y timer:** estas dos funciones trabajan con intervalos de tiempo
 
->interval: genera una secuencia de números de 0 hasta infinito, por naturaleza con asincronos
->timer: genera un observable que empieza ha emitir valores despues de una fecha específica despues de ese valor empieza a generar los valores siguientes en un periodo de tiempo indicado 
+>interval: genera una secuencia de números de 0 hasta infinito, por naturaleza con asíncronos
+>timer: genera un observable que empieza ha emitir valores después de una fecha específica después de ese valor empieza a generar los valores siguientes en un periodo de tiempo indicado 
 
 
 
@@ -76,14 +76,14 @@ Explicación de los operadores
 Operadores como:
 
 **map:** es el más común, permite trasformar lo que recibimos o lo que emite el observable en algo que
-nostros ocupemos, puede servir para extraer inf o para trasformarla o retornar otra cosa totalmente diferente
+nosotros ocupemos, puede servir para extraer inf o para transformarla o retornar otra cosa totalmente diferente
 
 **pluck** es útil cuando necesitamos extraer un valor del objeto que estamos recibiendo y que esa sea la nueva salida del observable
 
 **mapTo:** 
 cuando el observable emite el valor **1** y entra al **mapTo** la salida sería **a**, sirve para mostrar una salida específica 
 
-**filter:** sirve para filtrar la emsión de los valores del observable
+**filter:** sirve para filtrar la emisión de los valores del observable
 
 **tap:** El principal uso del tap es disparar efectos secundarios como por ejemplo imprimir en consola para conocer el valor que tenemos ó bien cuando se necesite disparar una acción cuando la información pasa por ese observable o cuando sea emitido un nuevo valor en el cual está presente mi tap, **NO CAMBIA EL FLUJO DE INFORMACIÓN**
 
@@ -92,7 +92,7 @@ cuando el observable emite el valor **1** y entra al **mapTo** la salida sería 
 ej:
 
 en este ejemplo se emite 1,3,5 pero no emite nada el reduce **acc** es el valor acumulado el **curr** es el valor actual (current value), dentro del *reduce* dice que va retornar el valor acumulado más el valor actual, el **cero** indica el valor inicial.
-Cuando el observable se completa entonces ahi es cuando vamos a tener el total acumulado    
+Cuando el observable se completa entonces ahí es cuando vamos a tener el total acumulado    
 
 > input$ ----- 1 ---- 3 ---- 5 -----|--->
 
@@ -114,15 +114,15 @@ eg:
 
 # Sección 6: Operadores no tan comunes
 
-**take:** toma el numero de iteracciones de un observable que se le indique
+**take:** toma el número de iteraciones de un observable que se le indique
 
 **first:** cuando el observable emite el primer valor con first() solo toma el primer valor y finaliza 
 otra condicion que se le puede poner es que ```` first(x => x>+10) ````
 
-**takeWhile:** Permite recibir valores mientras la condicion se cumpla
-    takeWhile( ({ y }) => y<=150) // cuando la condicion sea mayor a 150 no imprime, pero en el caso que se desee imprimir el valor que rompe la condición se utiliza INCLISIVE
+**takeWhile:** Permite recibir valores mientras la condición se cumpla
+    takeWhile( ({ y }) => y<=150) // cuando la condición sea mayor a 150 no imprime, pero en el caso que se desee imprimir el valor que rompe la condición se utiliza INCLISIVE
 
-**takeUntil:** es un observador que recibe como parametro otro observable.
+**takeUntil:** es un observador que recibe como parámetro otro observable.
 
 Sigue recibiendo y emitiendo los valores del primer observable hasta que el segundo observable emita su primer valor
 
@@ -136,7 +136,7 @@ Sigue recibiendo y emitiendo los valores del primer observable hasta que el segu
 
 > -------- --- 1 --- _ --- 2 --- 3 --- _ --- _ --- 4 --- | ---
 
-**distinctUntilChanged:** es muy parecido al operador **distinct**, la diferencia es que emite valores siempre y cuando la emision anterior no sea la misma
+**distinctUntilChanged:** es muy parecido al operador **distinct**, la diferencia es que emite valores siempre y cuando la emisión anterior no sea la misma
 
 
 > interval$ --- 1 --- 1 --- 2 --- 3 --- 3 --- 1 --- 4 --- | ---
@@ -150,7 +150,7 @@ Sigue recibiendo y emitiendo los valores del primer observable hasta que el segu
 
 # Sección 7: Operadores que trabajan con el tiempo
 
-**debounceTime:** nos ayuda a que nosotros podamos contar cuantas milisimas de segundo han pasado desde la ultima emisión y si esa milesima de segundo sobrepasa el parametro que tenemos en los parentesis entonces emitirá dicho valor.
+**debounceTime:** nos ayuda a que nosotros podamos contar cuantas milésimas de segundo han pasado desde la última emisión y si esa milésima de segundo sobrepasa el parámetro que tenemos en los paréntesis entonces emitirá dicho valor.
 
 el *debounceTime* nos ayuda a restringir la cantidad de emisiones que nuestro observable inicial esta emitiendo.
 
@@ -167,9 +167,9 @@ En este ejemplo cuando el observabe inicial ingresa **a**, espera 1 segundo y em
 **throttleTime:** es lo opuesto al operador debounceTime, pero un poco diferente
 el **debounceTime** cuando el source$ emite un valor espera un segundo para emitir, throttleTime cuando el source$ emite el primer valor inmediatamente emite dicho valor solo que espera 1 seg hasta emitir otro valor, en el caso que se haya emitido mas de un valor en el segundo de emisión, ignorará cualquire valor tomando en cuenta solo el primer valor
 
-El **throttleTime:** y **debounceTime**  son operadores bastante utilies para controlar las emisiones de observables que emiten valores muy frecuentemente 
+El **throttleTime:** y **debounceTime**  son operadores bastante útiles para controlar las emisiones de observables que emiten valores muy frecuentemente 
 **sampleTime:** nos permite obtener el ultimo valor emitido en un intervalo de tiempo
-el sampleTime nos permite a nosotros tener una subscripcion que esta pendiente de cada una de sus emisiones en periodo de tiempo
+el sampleTime nos permite a nosotros tener una suscripción que esta pendiente de cada una de sus emisiones en periodo de tiempo
 
 >-a b c ---- b ------------------ctx
 
@@ -178,7 +178,7 @@ el sampleTime nos permite a nosotros tener una subscripcion que esta pendiente d
 >---*1s*--c--*1s*--b--*1s*--_-----*1s*--x--
 **sample:**   emite el ultimo valor emitido por el observable, hasta que el otro observable que esta dentro de *samle* emita un valor
 
-**auditTime:** son muchos los operadores que manejan el tiempo  y trabajan de maneras muy similares, el aditTime emite el ultimo valor que ha sido emitido por el observable en un periodo de tiempo determiado\
+**auditTime:** son muchos los operadores que manejan el tiempo  y trabajan de maneras muy similares, el aditTime emite el ultimo valor que ha sido emitido por el observable en un periodo de tiempo determinado\
 
 LOS OBERVADORES DE TIEMPO AYUDAN A CONTROLAR LA EMISION DE SPAM,  QUE NOSOTROS QUEREMOS PROCESAR EN UN PERIODO DE TIEMPO 
 
@@ -186,12 +186,13 @@ Vinos en la sección anterior (ajax), que existe la necesidad de subscribirse al
 
 Por suerte, el equipo de ReactiveX pensó en esto y nos ayuda con las siguientes funciones y operadores:
 
-**mergeAll** sirve para trbajar con observables que internamente retornan observables.
-si el primer observable se completa(abcd) y tambien se completa la rama padre source$, no se completa el observable en general, es decir no se dispararia el complete despues del mergeAll porque aún hay una subscrpción que esta emitiendo valores, si despues la última subscripcion emite un valor de **g**, la salida seria **g**.
+**mergeAll** sirve para trabajar con observables que internamente retornan observables.
+si el primer observable se completa(abcd) y también se completa la rama padre source$, no se completa el observable en general, es decir no se dispararía el complete después del mergeAll porque aún hay una suscripción que esta emitiendo valores, si después la última suscripción emite un valor de **g**, la salida seria **g**.
 
 Este proceso de unificar observables en una sola salida se conoce como flattening Operator (Operador de aplanamiento)
 
 source$----------------------------|-------
+obs1------obs2
 \___________\
 _\____________\
 __a_____________\
@@ -209,12 +210,35 @@ ________fin
 
 
 
-**mergeMap** 
+**mergeMap** va a recibir el valor que sea emitido de nuestro observador inicial y está regresando un nuevo observador un intervalo de milisegundos.
+Cuando un operador de aplanamiento ve que se regresa un observable realmente no va a transferir el objeto al subscribe o al siguiente operador, lo que emite cuando fluyen atreves de él es el valor producto de la subscripción interna.
+El mergeMap no tiene límite de suscripciones internas y todas pueden estar activas simultáneamente 
 
-**switchMap** 
+**switchMap** es muy parecido al MergeMap, que recibe un callback que retorna un observable es el que se va a subscribir para hacer la emisión en la salida
+A diferencia del mergeMap(mantiene todas las líneas del tiempo que está subcrito), el switchMap solo conserva un observable interno activo y subscrito. 
+**concatMap** Sirve para concatenar los observables resultantes que pueden fluir atravez de ese operador
 
-**concatMap** 
+**exhaustMap** similar al switch ya que solo mantiene activo un observable, pero la diferencia es que si más de un observable entra a la vez, el exhaustMap ignora el resto y solo toma el primero en llegar.
 
-**exhaustMap** 
+es útil cuando tenemos eventos que están lanzando spam muy rápidamente, por ejemplo cuando tenemos un botón, y el usuario realiza varias veces click.
 
 Aquí tendremos formas muy interesantes de poder trabajar con el concepto del aplanamiento, que veremos y explicaré más adelante en esta sección
+
+# sección 10 
+
+operadores y métodos para combinar las emisiones de los observables o bien varios observables entre sí.
+
+**startWith** realiza una emisión antes que el observable realiza una petición asyn 
+
+**endWith** antes que termine el obs realiza la emisión del ultimo valor, no importa el orden entre startWith
+
+**concat ** NO ES UN OPERADOR, es una F U N C I O N que recibe observables y crea un nuevo observable
+
+**merge** NO ES UN OPERADOR, es una F U N C I O N que recibe un o mas observables y el resultado va ser el producto de los dos observables combinados simultáneamente, además no se realiza el complete del subscribe hasta que todos los observables terminen
+
+**combineLatest** es una función que recibe observables como argumentos, combinarnos y emitir el valor de todos los observables internos simultáneamente, en otras palabras espera hasta que todos los observables que entren a la función emitan un valor para retornar otro observable
+
+combina el último
+
+**forkJoin** es una función que recibe varios observables para trabajar
+
