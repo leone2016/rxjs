@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084616f1-ceb0-44c2-a999-d62e29d421b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rxjs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/01-mergeAll.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/02-mergeMap-analisis.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/02-mergeMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/03-switchMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/05-concatMap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/06-exhaustMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/transformacion/07-lab-aplanamiento.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/01-capitalizar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/02-reduce.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/03-randoms.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/04-cuenta-regresiva.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/05-combinar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/06-luke-skywalker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,25 +23,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="651">
-                <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="471">
+                <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -72,6 +63,8 @@
         <option value="$PROJECT_DIR$/curso-rxjs-inicio/src/combinacion/03-concat.ts" />
         <option value="$PROJECT_DIR$/curso-rxjs-inicio/src/combinacion/04-merge.ts" />
         <option value="$PROJECT_DIR$/curso-rxjs-inicio/README.md" />
+        <option value="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjs-ejercicios-resueltos/01-capitalizar.ts" />
+        <option value="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjs-ejercicios-resueltos/02-reduce.ts" />
         <option value="$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts" />
       </list>
     </option>
@@ -110,7 +103,14 @@
               <item name="rxjs" type="462c0819:PsiDirectoryNode" />
               <item name="curso-rxjs-inicio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="combinacion" type="462c0819:PsiDirectoryNode" />
+              <item name="operadores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rxjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rxjs" type="462c0819:PsiDirectoryNode" />
+              <item name="curso-rxjs-inicio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjs-ejercicios-resueltos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,7 +122,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/curso-rxjs-inicio/src/combinacion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -130,6 +130,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Leonardo\Documentos\U D E M Y\rxjs\curso-rxjs-inicio\src\rxjx-ejercicios" />
       <recent name="D:\Leonardo\Documentos\U D E M Y\rxjs\curso-rxjs-inicio\src\combinacion" />
     </key>
   </component>
@@ -155,12 +156,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577667963532</updated>
-      <workItem from="1577667973623" duration="15523000" />
+      <workItem from="1577667973623" duration="18547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15523000" />
+    <option name="totallyTimeSpent" value="18547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -354,23 +355,50 @@
     <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/combinacion/06-forkJoin.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="651">
-            <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/combinacion/07-forkJoinLab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/01-capitalizar.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/observables/09-from-of.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/rxjs-ejercicios-resueltos/01-capitalizar.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#192#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/rxjs-ejercicios-resueltos/02-reduce.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="471">
+            <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
