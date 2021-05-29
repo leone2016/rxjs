@@ -1,52 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="084616f1-ceb0-44c2-a999-d62e29d421b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/01-capitalizar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/02-reduce.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/03-randoms.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/04-cuenta-regresiva.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/05-combinar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios/06-luke-skywalker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/src/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="471">
-                <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,6 +50,7 @@
     <option name="width" value="1020" />
     <option name="height" value="550" />
   </component>
+  <component name="ProjectId" id="1tBVYtQgcJHYanUdtmjkNRMGRQK" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -119,14 +95,20 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/curso-rxjs-inicio/src/rxjx-ejercicios" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="ts.external.directory.path" value="D:\Leonardo\Documentos\U D E M Y\rxjs\curso-rxjs-inicio\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -134,18 +116,7 @@
       <recent name="D:\Leonardo\Documentos\U D E M Y\rxjs\curso-rxjs-inicio\src\combinacion" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,6 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577667963532</updated>
       <workItem from="1577667973623" duration="18547000" />
+      <workItem from="1622242521229" duration="4779000" />
     </task>
     <servers />
   </component>
@@ -208,7 +180,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/curso-rxjs-inicio/node_modules/rxjs/src/internal/operators/debounceTime.ts">
