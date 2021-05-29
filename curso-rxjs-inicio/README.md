@@ -1,50 +1,6 @@
-# Proyecto inicial - Curso de RXJS
 
 
-Simplemente cambian el puerto por el que ustedes necesiten y listo. (lógicamente graban los cambios antes de ejecutar el ```npm start``` nuevamente)
-
-
-Los temas principales de la sección son:
-
-**of:** cuando tengamos una secuencia de valores que siempre van a ser boléanos o siempre van a ser strings,
- es recomendable agregar el tipo de dato of<string> o of<number>, con el objetivo de tener un tipado estricto de datos
- const obs$ = of ([1,2], { a:1, b:2 }, function(){}, Promise.resolve(true))
-
- **from:** crea un observable en base a un array, objeto, promesa, iterable, otro observable
-
-**fromEvent:** nos permite crear observables de even target es decir de cierto tipo
-en este ejemplo el event target es el DOCUMENT donde se busca todos los eventos del SCROLL
-
-**range:** la cual nos crea un obs que crea una secuencia de num en base a un rango, por defecto con sincronos pero se puede transformar en asyncronos con la función **async scheduler**, si tenemos un range de 1 - 5 el valor inicial será 1 y el último será va ser el 5 y se completaría
-interval, el segundo parámetro del range indica el N número consecutivos 
-eg: 
-````js
-range( 1,5 )
- outPut
- 1
- 2
- 3
- 4
- 5
-
- range(-5,5)
- -5
- -4
- -3
- -2
- -1
 ````
-
- 
-
-**interval y timer:** estas dos funciones trabajan con intervalos de tiempo
-
->interval: genera una secuencia de números de 0 hasta infinito, por naturaleza con asíncronos
->timer: genera un observable que empieza ha emitir valores después de una fecha específica después de ese valor empieza a generar los valores siguientes en un periodo de tiempo indicado 
-
-
-
- **asyncScheduler:** no crea un observable crea una subscrpcion, (una subscripción es el producto de un .subcribe()  )transforma de sincrona a asincrona
 
 
 

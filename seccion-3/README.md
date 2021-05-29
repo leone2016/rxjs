@@ -3,10 +3,10 @@
 ## Tabla de contenidos
 - [Sección 3: Observables](#seccin-3-observables)
 - [Tabla de contenidos](#tabla-de-contenidos)
-- [12. Temas puntuales de la sección](#12-temas-puntuales-de-la-seccin)
-- [13. Nuestro primer observable](#13-nuestro-primer-observable)
-- [18. Subject](#18-subject)
-- [19. Subject - Parte 2](#19-subject---parte-2)
+    - [12. Temas puntuales de la sección](#12-temas-puntuales-de-la-seccin)
+    - [13. Nuestro primer observable](#13-nuestro-primer-observable)
+    - [18. Subject](#18-subject)
+    - [19. Subject - Parte 2](#19-subject---parte-2)
 
 
 ## 12. Temas puntuales de la sección

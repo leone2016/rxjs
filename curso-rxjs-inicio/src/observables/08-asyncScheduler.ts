@@ -14,4 +14,4 @@ asyncScheduler.schedule(  function( state ){
     console.log('state', state);
 
     this.schedule( state+ 1, 1000);
-}, 3000, )
+}, 3000, 0)
