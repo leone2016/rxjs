@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="084616f1-ceb0-44c2-a999-d62e29d421b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/src/observables/08-asyncScheduler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/observables/08-asyncScheduler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seccion-3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-3/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,7 @@
       <updated>1577667963532</updated>
       <workItem from="1577667973623" duration="18547000" />
       <workItem from="1622242521229" duration="6422000" />
-      <workItem from="1622280817818" duration="12247000" />
+      <workItem from="1622280817818" duration="13955000" />
     </task>
     <servers />
   </component>
