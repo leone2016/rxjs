@@ -1,42 +1,5 @@
 
-
-````
-
-
-
->Los temas principales de esta sección son:
-
-Explicación de los operadores
-
-Operadores como:
-
-**map:** es el más común, permite trasformar lo que recibimos o lo que emite el observable en algo que
-nosotros ocupemos, puede servir para extraer inf o para transformarla o retornar otra cosa totalmente diferente
-
-**pluck** es útil cuando necesitamos extraer un valor del objeto que estamos recibiendo y que esa sea la nueva salida del observable
-
-**mapTo:** 
-cuando el observable emite el valor **1** y entra al **mapTo** la salida sería **a**, sirve para mostrar una salida específica 
-
-**filter:** sirve para filtrar la emisión de los valores del observable
-
-**tap:** El principal uso del tap es disparar efectos secundarios como por ejemplo imprimir en consola para conocer el valor que tenemos ó bien cuando se necesite disparar una acción cuando la información pasa por ese observable o cuando sea emitido un nuevo valor en el cual está presente mi tap, **NO CAMBIA EL FLUJO DE INFORMACIÓN**
-
-**reduce:** aplica una función acumuladora a las emisiones producidas por el observable 
-
-ej:
-
-en este ejemplo se emite 1,3,5 pero no emite nada el reduce **acc** es el valor acumulado el **curr** es el valor actual (current value), dentro del *reduce* dice que va retornar el valor acumulado más el valor actual, el **cero** indica el valor inicial.
-Cuando el observable se completa entonces ahí es cuando vamos a tener el total acumulado    
-
-> input$ ----- 1 ---- 3 ---- 5 -----|--->
-
-> reduce(( acc, curr ) => acc + curr, 0)
-
-> -----------------------------------9--->
-
-**scan:** el scan es casi lo mismo al **reduce** pero con una diferencia, cuando los valores son emitidos por el observable inmediatamente van saliendo con forme van ingresando pero REGRESA su valor acumulado
-
+**scan:** 
 eg: 
 
 > input$ ----- 1 ---- 3 ---- 5 -----|--->

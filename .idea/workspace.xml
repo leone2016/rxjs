@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="084616f1-ceb0-44c2-a999-d62e29d421b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/src/operadores/02-map-filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/operadores/02-map-filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seccion-5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +113,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/seccion-3/curso-rxjs-inicio/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/seccion-4/curso-rxjs-inicio/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -130,7 +135,10 @@
       <updated>1577667963532</updated>
       <workItem from="1577667973623" duration="18547000" />
       <workItem from="1622242521229" duration="6422000" />
-      <workItem from="1622280817818" duration="13955000" />
+      <workItem from="1622280817818" duration="20562000" />
+      <workItem from="1622372566832" duration="777000" />
+      <workItem from="1622498977959" duration="2763000" />
+      <workItem from="1622547826080" duration="2808000" />
     </task>
     <servers />
   </component>
@@ -189,7 +197,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/seccion-3/curso-rxjs-inicio/src/observables/14-obsservable-subscriber.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
