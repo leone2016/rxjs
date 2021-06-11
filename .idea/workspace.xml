@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="084616f1-ceb0-44c2-a999-d62e29d421b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/seccion-6/curso-rxjs-inicio/src/Operadores/47-take.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curso-rxjs-inicio/src/operadores/02-map-filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/curso-rxjs-inicio/src/operadores/02-map-filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seccion-5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/seccion-5/curso-rxjs-inicio/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/seccion-4/curso-rxjs-inicio/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/seccion-6/curso-rxjs-inicio/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -138,7 +135,12 @@
       <workItem from="1622280817818" duration="20562000" />
       <workItem from="1622372566832" duration="777000" />
       <workItem from="1622498977959" duration="2763000" />
-      <workItem from="1622547826080" duration="2808000" />
+      <workItem from="1622547826080" duration="10380000" />
+      <workItem from="1622813067921" duration="599000" />
+      <workItem from="1622936773636" duration="983000" />
+      <workItem from="1623193740177" duration="2686000" />
+      <workItem from="1623241578938" duration="4351000" />
+      <workItem from="1623365761694" duration="4723000" />
     </task>
     <servers />
   </component>
@@ -191,6 +193,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

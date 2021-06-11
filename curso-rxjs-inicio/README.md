@@ -1,32 +1,6 @@
 
-**scan:** 
-eg: 
 
-> input$ ----- 1 ---- 3 ---- 5 -----|--->
-
-> scan( ( acc, cur ) => acc + cur, 0)
-
-> -------------1------4------9------|--->
-
-**Encadenamiento de operadores**
-
-# Sección 6: Operadores no tan comunes
-
-**take:** toma el número de iteraciones de un observable que se le indique
-
-**first:** cuando el observable emite el primer valor con first() solo toma el primer valor y finaliza 
-otra condicion que se le puede poner es que ```` first(x => x>+10) ````
-
-**takeWhile:** Permite recibir valores mientras la condición se cumpla
-    takeWhile( ({ y }) => y<=150) // cuando la condición sea mayor a 150 no imprime, pero en el caso que se desee imprimir el valor que rompe la condición se utiliza INCLISIVE
-
-**takeUntil:** es un observador que recibe como parámetro otro observable.
-
-Sigue recibiendo y emitiendo los valores del primer observable hasta que el segundo observable emita su primer valor
-
-**skip:** sirve para emitir x cantidad de emisiones iniciales
-
-**distinct:** deja pasar valores que no hayan sido emitidos previamente en mi observable
+**distinct:** 
 
 > interval$ --- 1 --- 1 --- 2 --- 3 --- 3 --- 1 --- 4 --- | ---
 
@@ -34,7 +8,7 @@ Sigue recibiendo y emitiendo los valores del primer observable hasta que el segu
 
 > -------- --- 1 --- _ --- 2 --- 3 --- _ --- _ --- 4 --- | ---
 
-**distinctUntilChanged:** es muy parecido al operador **distinct**, la diferencia es que emite valores siempre y cuando la emisión anterior no sea la misma
+**distinctUntilChanged:** 
 
 
 > interval$ --- 1 --- 1 --- 2 --- 3 --- 3 --- 1 --- 4 --- | ---
